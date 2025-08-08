@@ -41,18 +41,6 @@ Open the app (Vite default):
 
 -   http://localhost:5173
 
-Build for production:
-
-```
-npm run build
-```
-
-Preview the production build locally:
-
-```
-npm run preview
-```
-
 ## Data
 
 -   Source: NYC Open Data (packaged locally for the demo)
@@ -104,25 +92,6 @@ You can adapt the app quickly by tweaking these spots:
     -   The body background uses a smooth, multi-stop radial gradient to avoid hard edges: see `src/App.css`.
 -   Custom scrollbar
     -   Implemented in `src/App.css` for Firefox and WebKit browsers.
-
-## Scripts
-
--   `dev`: start Vite dev server
--   `build`: production build
--   `preview`: preview production build
-
-See `package.json` for the full list of scripts.
-
-## Deployment
-
-This is a static site after build, so you can deploy the `dist/` folder to any static host:
-
--   Netlify
--   Vercel
--   GitHub Pages
--   S3/CloudFront, etc.
-
-For GitHub Pages, you may need to set a `base` in `vite.config.js` if deploying under a subpath.
 
 ## Accessibility notes
 
