@@ -19,7 +19,7 @@ export default function TimeSeriesChart({ data, indicator, place, geoType, unit,
         {indicator} in {place} ({geoType})
       </p>
       <div className="chart-wrapper">
-        <ResponsiveContainer width="100%" height={380}>
+        <ResponsiveContainer width="100%" height={500}>
           <LineChart data={data} margin={{ top: 10, right: 20, bottom: 10, left: 0 }}>
             <CartesianGrid strokeDasharray="4 4" opacity={0.4} />
             <XAxis
