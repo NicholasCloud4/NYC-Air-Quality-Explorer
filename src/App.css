@@ -245,6 +245,37 @@ select {
   color: var(--muted)
 }
 
+/* Custom scrollbar */
+html {
+  /* Firefox */
+  scrollbar-width: thin; /* auto | thin | none */
+  scrollbar-color: var(--accent) transparent; /* thumb | track */
+}
+
+/* Chrome, Edge, Safari */
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--accent);
+  border-radius: 8px;
+  border: 2px solid var(--elev-2);
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #7dd3fc; /* lighter accent on hover */
+}
+
+*::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
 @media (max-width: 920px) {
   .kpis {
     grid-template-columns: repeat(2, 1fr)
