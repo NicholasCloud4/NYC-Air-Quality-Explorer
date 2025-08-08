@@ -79,11 +79,15 @@ function App() {
 
       <footer className="footer">
         <div className="container">
-          <span>Built with React + Vite</span>
-          <span>Data © NYC OpenData</span>
+          <span>Crafted with React + Vite by <span style={{ fontWeight: 'bold' }}>Nicholas</span></span>
+          <span><a style={{
+            color: '#06b6d4',
+            fontWeight: 'bold',
+            textDecoration: 'none',
+          }} href="https://opendata.cityofnewyork.us/">NYC OpenData</a></span>
         </div>
-      </footer>
-    </div>
+      </footer >
+    </div >
   )
 }
 

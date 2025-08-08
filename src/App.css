@@ -23,7 +23,10 @@ body {
   margin: 0;
   font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
   color: var(--text);
-  background: radial-gradient(1200px 800px at 80% -20%, rgba(56, 189, 248, .12), transparent 50%), var(--bg);
+  /* smoother, responsive radial background without hard edges */
+  background: var(--bg);
+  background-image: radial-gradient(120% 80% at 80% -20%, rgba(56, 189, 248, 0.10) 0%, rgba(56, 189, 248, 0.06) 40%, rgba(56, 189, 248, 0.02) 70%, rgba(56, 189, 248, 0) 85%);
+  background-repeat: no-repeat;
 }
 
 .page {
@@ -248,8 +251,10 @@ select {
 /* Custom scrollbar */
 html {
   /* Firefox */
-  scrollbar-width: thin; /* auto | thin | none */
-  scrollbar-color: var(--accent) transparent; /* thumb | track */
+  scrollbar-width: thin;
+  /* auto | thin | none */
+  scrollbar-color: var(--accent) transparent;
+  /* thumb | track */
 }
 
 /* Chrome, Edge, Safari */
@@ -269,7 +274,8 @@ html {
 }
 
 *::-webkit-scrollbar-thumb:hover {
-  background-color: #7dd3fc; /* lighter accent on hover */
+  background-color: #7dd3fc;
+  /* lighter accent on hover */
 }
 
 *::-webkit-scrollbar-corner {
